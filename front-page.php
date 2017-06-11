@@ -1,1 +1,3 @@
+<?php get_header(); ?>
 <h1>Hello from front-page</h1>
+<?php get_footer(); ?>
