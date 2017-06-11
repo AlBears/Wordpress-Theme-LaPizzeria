@@ -1,0 +1,16 @@
+/*
+  Theme Name: La Pizzeria
+  Theme URI:
+  Author: ALB
+  Author URI:
+  Description: Theme for Reastaurants
+  Version: 1.0
+  License: GNU General Public License
+  License URI: http://gnu.org/license
+  Tags: restaurant, mobile first, responsive, pizza
+  Text Domain: lapizzeria
+*/
+
+body {
+  background-color: red;
+}
