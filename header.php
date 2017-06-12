@@ -21,7 +21,10 @@
           $args = array(
             'theme_location'  => 'social-menu',
             'container'       => 'nav',
-            'container_class' => 'socials'
+            'container_class' => 'socials',
+            'container_id'    => 'socials',
+            'link_before'     => '<span class="sr-text">',
+            'link_after'      => '</span>'
           );
           wp_nav_menu($args);
         ?>

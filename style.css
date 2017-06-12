@@ -10,3 +10,7 @@
   Tags: restaurant, mobile first, responsive, pizza
   Text Domain: lapizzeria
 */
+
+.sr-text {
+  display: none;
+}
