@@ -9,12 +9,13 @@
 </head>
 <body>
 
-  <header class="site-header">
+<header class="site-header">
+  <div class="container">
     <div class="logo">
       <a href="<?php echo esc_url(home_url('/')); ?>">
         <img src="<?php echo get_template_directory_uri() ?>/img/logo.svg" alt="Logo image" class="logoimage">
       </a>
-    </div><!-- logo -->
+    </div><!-- .logo -->
     <div class="header-information">
       <div class="socials">
         <?php
@@ -28,24 +29,25 @@
           );
           wp_nav_menu($args);
         ?>
-      </div><!-- socials -->
+      </div><!-- .socials -->
       <div class="address">
         <p>8179 Bay Avenue Mountain View, CA 94043</p>
         <p>Phone Number: +1-92-456-7890</p>
       </div>
     </div>
+  </div><!-- .container  -->
+</header>
 
-  </header>
 
-  <div class="main-menu">
-    <div class="navigation">
-      <?php
-        $args = array(
-          'theme_location'  => 'header-menu',
-          'container'       => 'nav',
-          'container_class' => 'site-nav'
-        );
-        wp_nav_menu($args);
-      ?>
-    </div>
+<div class="main-menu">
+  <div class="navigation">
+    <?php
+      $args = array(
+        'theme_location'  => 'header-menu',
+        'container'       => 'nav',
+        'container_class' => 'site-nav'
+      );
+      wp_nav_menu($args);
+    ?>
   </div>
+</div>
