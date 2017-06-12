@@ -44,3 +44,50 @@ h4 {
 .sr-text {
   display: none;
 }
+
+/**HEADER**/
+header.site-header {
+  border-bottom: 1px solid #c1c1c1;
+  padding-bottom: 30px;
+}
+div.logo {
+  text-align: center;
+}
+@media only screen and (min-width:768px) {
+  div.logo {
+    text-align: left;
+  }
+}
+@media only screen and (min-width:992px) {
+  div.logo {
+    text-align: center;
+  }
+}
+img.logoimage {
+  width: 250px;
+}
+@media only screen and (min-width:768px) {
+  header.site-header .container {
+    position: relative;
+  }
+  header.site-header .header-information {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+div.address {
+  display: block;
+  clear: both;
+  padding-top: 10px;
+}
+div.address p {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+}
+@media only screen and (min-width:768px) {
+  div.address p {
+    text-align: right;
+  }
+}
