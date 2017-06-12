@@ -135,7 +135,12 @@ nav.socials li a[href*="youtube.com"]::before {
 
 /*Main Menu*/
 nav.site-nav {
-
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  nav.site-nav {
+    display: block;
+  }
 }
 nav.site-nav ul {
   list-style: none;
@@ -144,9 +149,11 @@ nav.site-nav ul {
   width: 100%;
   display: table;
 }
-nav.site-nav ul li {
-  display: table-cell;
-  width: 1%;
+@media only screen and (min-width: 768px) {
+  nav.site-nav ul li {
+    display: table-cell;
+    width: 1%;
+  }
 }
 nav.site-nav ul li a {
   text-align: center;
@@ -160,4 +167,26 @@ nav.site-nav ul li a {
 }
 nav.site-nav ul li.current_page_item a {
   border-bottom: 8px solid #a61206;
+}
+
+/*Responsive Menu Button*/
+@media only screen and (max-width: 767px) {
+  .mobile-menu a {
+    height: 40px;
+    line-height: 40px;
+    background-color: #a61206;
+    width: 100%;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: arial, helvetica;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .mobile-menu a {
+    display: none;
+  }
 }
