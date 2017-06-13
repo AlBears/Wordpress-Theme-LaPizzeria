@@ -17,7 +17,7 @@
     </div>
 
     <div class="box-information container clear">
-      <div class="box">
+      <div class="single-box">
         <?php
           $id_image = get_field('image_1');
           $image = wp_get_attachment_image_src($id_image, 'boxes');
@@ -28,7 +28,7 @@
         </div>
       </div>
 
-      <div class="box">
+      <div class="single-box">
         <?php
           $id_image = get_field('image_2');
           $image = wp_get_attachment_image_src($id_image, 'boxes');
@@ -39,7 +39,7 @@
         <img src="<?php echo $image[0]; ?>" alt="">
       </div>
 
-      <div class="box">
+      <div class="single-box">
         <?php
           $id_image = get_field('image_3');
           $image = wp_get_attachment_image_src($id_image, 'boxes');
