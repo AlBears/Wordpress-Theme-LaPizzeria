@@ -17,10 +17,7 @@ $(document).ready(function(){
       $('nav.site-nav').hide();
     }
   });
-
-
-
-
+  boxAjustment();
 });
 //Adapt the hight of images to the div element
 function boxAjustment() {
