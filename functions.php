@@ -3,12 +3,14 @@
 
 function lapizzeria_styles() {
 
+  wp_register_style('googlefont', 'https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700,900', array(), '1.0.0' );
   wp_register_style('normalize', get_template_directory_uri(). '/css/normalize.css', array(), '7.0.0' );
   wp_register_style('font-awesome', get_template_directory_uri(). '/css/font-awesome.css', array(), '4.7.0' );
   wp_register_style('style', get_template_directory_uri(). '/style.css', array('normalize', 'font-awesome'), '1.0' );
 
   wp_enqueue_style('normalize');
   wp_enqueue_style('font-awesome');
+  wp_enqueue_style('googlefont');
   wp_enqueue_style('style');
 
   wp_register_script('script', get_template_directory_uri(). '/js/scripts.js', array('jquery'), '1.0.0', true );
