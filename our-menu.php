@@ -39,7 +39,7 @@ get_header();?>
         $pizzas = new WP_Query($args);
         while($pizzas->have_posts() ): $pizzas->the_post(); ?>
 
-          <div class="columns2-4">
+          <div class="columns2-4 specialty-content">
             <a href="<?php the_permalink(); ?>">
               <?php the_post_thumbnail('specialties'); ?>
               <h4><?php the_title(); ?> <span>$ <?php the_field('price'); ?></span></h4>
@@ -52,7 +52,7 @@ get_header();?>
     </div>
 
     <h3 class="primary-text">Others</h3>
-    <div class="container-grid">
+    <div class="container-grid specialty-content">
       <?php
         $args = array(
           'post_type'     => 'specialties',
