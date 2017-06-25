@@ -18,6 +18,16 @@ $(document).ready(function(){
     }
   });
   boxAjustment();
+
+  //Fluidbox Plugin
+
+  $('.gallery a').each(function() {
+    $(this).attr({ 'data-fluidbox': '' });
+  });
+
+  if($('[data-fluidbox]').length > 0) {
+    $('[data-fluidbox]').fluidbox();
+  }
 });
 //Adapt the hight of images to the div element
 function boxAjustment() {
