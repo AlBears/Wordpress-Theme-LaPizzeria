@@ -3,7 +3,7 @@
 //link or import database.php fieldset
 require get_template_directory() . '/inc/database.php';
 require get_template_directory() . '/inc/reservations.php';
-
+require get_template_directory() . '/inc/options.php';
 
 function lapizzeria_setup() {
   add_theme_support('post-thumbnails');

@@ -202,7 +202,8 @@ nav.site-nav ul li a {
 }
 nav.site-nav ul li.current_page_item a,
 .single-specialties nav.site-nav ul li.menu-item-27 a,
-nav.site-nav ul li.current_page_parent {
+nav.site-nav ul li.current_page_parent,
+.page-id-80 nav.site-nav ul li.menu-item-24 a {
   border-bottom: 8px solid #a61206;
 }
 
