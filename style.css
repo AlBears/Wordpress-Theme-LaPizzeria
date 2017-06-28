@@ -79,6 +79,13 @@ h4 {
 .primary:hover {
   background-color: #7b0d04;
 }
+.secondary {
+  background-color: #f19f30;
+  transition: background-color .5s ease;
+}
+.secondary:hover {
+  background-color: #da8b20;
+}
 
 /**HEADER**/
 header.site-header {
@@ -689,4 +696,26 @@ form.reservation-form ::-ms-input-placeholder {
 }
 form.reservation-form input[type="submit"] {
   border: none;
+}
+
+/*FRONT-PAGE*/
+.page-id-5 div.hero {
+  height: 750px;
+}
+@media only screen and (min-width: 768px) {
+  .page-id-5 .main-content {
+    margin-top: 0;
+  }
+  .page-id-5 .hero-text {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .page-id-5 .hero-text {
+    width: 40%;
+  }
+}
+.page-id-5 .hero-text p {
+  line-height: 40px;
+  font-size: 18px;
 }
