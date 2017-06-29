@@ -33,7 +33,7 @@
             <div class="information">
               <?php the_title('<h3>', '</h3>'); ?>
               <?php the_content(); ?>
-              <p class="price">$ <?php the_field('price'); ?></p>
+              <p class="price">$<?php the_field('price'); ?></p>
               <a class="button primary" href="<?php the_permalink(); ?>">read more</a>
             </div>
           </div>
