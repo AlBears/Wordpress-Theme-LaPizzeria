@@ -12,13 +12,27 @@
       </div>
     </div>
   </div>
+  <?php endwhile; ?>
 
   <div class="main-content container">
-    <main class="text-center content-text clear">
+    <main class="content-text clear">
+      <h2 class="primary-text text-center">Our Specialties</h2>
+      <?php
+        $args = array(
+          'posts_per_page'  => 3,
+          'post_type'       => 'specialties',
+          'category_name'   => 'pizzas',
+          'orderby'         => 'rand'
+        );
+        $specialties = new WP_Query($args);
+        while($specialties->have_posts()): $specialties->the_post();?>
 
+        <h1><?php the_title(); ?></h1>
+
+        <?php  endwhile; wp_reset_postdata();?>
     </main>
   </div>
 
-<?php endwhile; ?>
+
 
 <?php get_footer(); ?>
