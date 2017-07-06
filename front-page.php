@@ -69,6 +69,19 @@
      ?>
   </section>
 
+  <section class="location-reservation clear">
+    <div class="container-grid">
+      <div class="columns2-4">
+        <div id="map">
+
+        </div>
+      </div>
+      <div class="columns2-4">
+          <?php get_template_part('templates/reservation', 'form'); ?>
+      </div>
+    </div>
+  </section>
+
 
 
 <?php get_footer(); ?>
